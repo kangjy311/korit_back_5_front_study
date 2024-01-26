@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box {
+            margin-top: 400px;
+            position: relative;
+            border: 1px solid #222;
+            width: 800px;
+            height: 1200px;
+        }
+        .box {
+            border: 1px solid red;
+            width:  100px;
+            height: 100px;
+        }
+        .sub-box4 {
+            position: relative;
+            right: 10px;
+            bottom: 10px;
+        }
+        .sub-box3 {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .sub-box2 {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+        .sub-box1 {
+            position: sticky;
+            top: 200px;
+            left: 300px;
+        }
+        /* * position
+            absolute : 0, 0 위치에서 이동 
+            부모한테도 position: relative 줘야지 그 안에서 이동함 아니면 html기준
+            fixed : 화면 안에 고정, 부모 무시 
+            sticky : 부모 안에서 움직임*/
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="box sub-box1"></div>
+        <div class="box sub-box2"></div>
+        <div class="box sub-box3"></div>
+        <div class="box sub-box4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main-box {
+            margin: 300px auto;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid #222;
+            border-radius: 5px;
+            width: 400px;
+            height: 300px;
+            background-color: white;
+        }
+        
+        .box1 {
+            position: absolute;
+            border: 1px solid rgb(7, 238, 76);
+            border-radius: 30px;
+            right: -18px;
+            top: -15px;
+            width: 300px;
+            height: 100px;
+            background-color: white;
+        }
+
+        .x {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+    </style>
+    <!-- z-index 기본값 0    ex) z-index: -1;
+        1, -1 로 어떤게 위에 보일지 설정할수있음 
+        
+        - y축 중간
+        transform: translateY(-50%)
+        top: 50%;
+        - x축 중간
+        transform: translateX(-50%);
+        left: 50%;
+        - 정 가운데
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        -->
+
+</head> 
+<body>
+    <div class="main-box">
+        <div class="box1">
+            <div class="x">X</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            margin: 40px;
+            border: 3px solid #222;
+            /* border 테투리를 따로 할 때 */
+            /* border-width: 1px 2px 3px 4px;
+            border-top: 5px solid red; */
+            border-radius: 10px;
+            /* border-top-right-radius: 10px; */
+            padding: 20px 10px 5px 2px;
+            width: 100px;
+            height: 100px;
+            background-color: #aaa;
+
+            /* margin, border, padding, width, height 순으로 입력하기 */
+            /* 클릭 가능한 영역은 border까지 */
+            /* top - ringt - bottom - left 순서 */
+        }
+        .text {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            color: white;
+        }
+        .box1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 800px;
+            background-color: #aaa;
+        }
+        .box2 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">테스트</div>
+    <input type="text">
+
+    <span class="text">일반 테스트</span>
+
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
