@@ -1,0 +1,33 @@
+.side-bar-layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #636e7b66;
+}
+.side-bar-container {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 320px;
+    height: 100%;
+    background-color: #161b22;
+    box-shadow: 1px 0px 10px #30363d;
+}
+.side-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+}
+.side-bar-logo {
+    width: 32px;
+    height: 32px;
+    padding: 8px 0px 6px 8px;
+}
+.side-bar-button {
+    width: 32px;
+    height: 32px;
+    background-color: #161b22;
+}
