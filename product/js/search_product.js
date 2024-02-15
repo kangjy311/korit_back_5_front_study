@@ -9,20 +9,25 @@ async function handleSearchClick() {
         const productData = await response.json();
         console.log(productData);
         const productList = document.querySelector(".product-list");
-        productList.innerHTML = ``;
+        productList.innerHTML = "";
 
-        for(let product of productData.data) {
-            productList.innerHTML += `
-            <tr>
-                <td>${product.productId}</td>
-                <td>${product.name}</td>
-                <td>${product.price}</td>
-                <td>${product.size}</td>
-            </tr>
-            `;
+        for(let product of productData) {
+            productList.innerHTML += ProductInfoTr(product);
         }
 
     } catch(error) {
 
     }
+}
+
+function ProductInfoTr({ productId, name, price, size}) {
+    return `
+        <tr>
+            <td>${productId}</td>
+            <td>${name}</td>
+            <td>${price}</td>
+            <td>${size}</td>
+        </tr>    
+    `;
+
 }

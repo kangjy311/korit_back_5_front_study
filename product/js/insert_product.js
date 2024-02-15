@@ -28,17 +28,14 @@ async function handleAddClick() {
 
     const data = {
         name: productInput[0].value,
-        price: productInput[1].value,
+        price: parseInt(productInput[1].value),
         size: productInput[2].value
     }
-
-    const jsonData = JSON.stringify(data);
-    console.log(jsonData);
 
     const option = {
         method: "post",
         headers: {"content-Type": "appication/json"},
-        body: jsonData
+        body: JSON.stringify(data)
     }
 
     try {
@@ -51,9 +48,10 @@ async function handleAddClick() {
 
         const json = await response.json();
         console.log(json);
+        alert(`${json.succeesCount}건의 상품 추가 완료`);
         
     } catch(error) {
-        alert(error);
+        alert(error?.errorMessage);     
     }
 
 }
